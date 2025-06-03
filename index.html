@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Page for Ricky Menu</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./lib/ricky-menu.js"></script>
+</head>
+<body>
+    <h1>Welcome To My Web Page!</h1>
+    <p>
+        Try right-clicking on one of the colored DIVs down below!
+        <button popovertarget="test-1-menu">popover</button>
+    </p>
+    <div class="test-container">
+        <div class="test" id="test-1">
+            <h1>Test 1</h1>
+            <p>
+                Alerts to demonstrate Javascript! Wow!
+            </p>
+        </div>
+        <div class="test" id="test-2">
+            <h1>Test 2</h1>
+            <p>
+                Shifting colors to demonstrate stylability! Neat!
+            </p>
+        </div>
+        <div class="test" id="test-3">
+            <h1>Test 3</h1>
+            <p>
+                Nested menus to demonstrate...uh, nested menus! Cool!
+            </p>
+        </div>
+    </div>
+
+    <context-menu id="test-1-menu" target="test-1">
+        <option>Alert Me</option>
+        <option>Alert Me in 2 Seconds</option>
+        <option>Log Alert to Console</option>
+    </context-menu>
+    <context-menu id="test-2-menu" target="test-2">
+        <option>Orange!</option>
+        <option>Purple!</option>
+        <option>Yellow!</option>
+    </context-menu>
+</body>
+</html>

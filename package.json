@@ -1,0 +1,33 @@
+{
+  "name": "ricky-menu",
+  "version": "0.0.0",
+  "description": "A declarative, no-dependency, Javascript/HTML context menu library",
+  "main": "lib/ricky-menu.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmoeJith/RickyMenu.git"
+  },
+  "keywords": [
+    "declarative",
+    "no",
+    "dependency",
+    "javascript",
+    "web",
+    "component",
+    "context",
+    "menu",
+    "right",
+    "click",
+    "library",
+    "component"
+  ],
+  "author": "Joseph Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SmoeJith/RickyMenu/issues"
+  },
+  "homepage": "https://github.com/SmoeJith/RickyMenu#readme"
+}

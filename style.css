@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.test {
+    width: 66%;
+    margin: auto;
+    border: 0.5em solid black;
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#test-1 {
+    background-color: #ffaaaa;
+}
+
+#test-2 {
+    background-color: #aaffaa;
+}
+
+#test-3 {
+    background-color: #ffffaa;
+}
+
+context-menu {
+    font-family: sans-serif;
+    font-size: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+
+    /* BUG: When the top left radius isn't set to 0, when right-click is released it closes the popover. */
+    border-top-left-radius: 0rem;
+}
+
+/* context-menu::backdrop {
+    background-color: black;
+} */
