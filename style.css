@@ -39,3 +39,7 @@ context-menu {
 /* context-menu::backdrop {
     background-color: black;
 } */
+
+context-menu > option:hover {
+    background-color: #00000044;
+}
