@@ -31,14 +31,36 @@ context-menu {
     font-size: 1rem;
     border: 0.1rem solid black;
     border-radius: 0.5rem;
+    padding: 0em;
+    overflow: visible;
 
-    /* BUG: When the top left radius isn't set to 0, when right-click is released it closes the popover. */
-    border-top-left-radius: 0rem;
+    /* There was a bug where a rounded corner would prevent the context menu from  */
+    /* border-top-left-radius: 0rem; */
+}
+
+/* This CSS rule exists solely to prevent the context menu from *
+ * closing on release of right-click when opening a context     *
+ * menu with rounded corners! Modify at your own risk!          */
+context-menu::before {
+    position: absolute;
+    display: block;
+    overflow: visible;
+    top: -0.1rem;
+    left: -0.1rem;
+    width: 1px;
+    height: 1px;
+    background-color: transparent;
+    border: none;
+    content: "";
 }
 
 /* context-menu::backdrop {
     background-color: black;
 } */
+
+context-menu > option {
+    padding: 0.25rem;
+}
 
 context-menu > option:hover {
     background-color: #00000044;
